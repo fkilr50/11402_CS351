@@ -2,19 +2,14 @@
 
 ## Introduction
 
-Hello, my name is Marvel Aiken. Replace this line with a short introduction about yourself (e.g., your year, major, interests, or areas of focus).
-
+Hello, my name is Marvel Aiken. I am a junior IBPI student. I wish to gain a lot of experiences in this course.
 ## Purpose of this Repository
 
 This repository contains materials for CS351 including assignments, lab exercises, notes, and any supporting code or documents produced for the course.
 
 ## GitHub Pages
 
-After you publish a GitHub Pages site for this repository, add the link here. Example:
-
 https://fkilr50.github.io/11402_CS351
-
-Replace `<your-github-username>` with your GitHub username and update the path if you use a different repository name or a user/organization site.
 
 ## File / Folder Organization
 
@@ -26,5 +21,4 @@ Replace `<your-github-username>` with your GitHub username and update the path i
 - `data/`        : Any datasets or sample inputs (if applicable).
 - `README.md`    : This file — overview and instructions.
 
-Feel free to adjust these folders to match how you prefer to organize your work. If you'd like, I can create the suggested folder structure and add a starter `index.md` for GitHub Pages.
 # 11402_CS351
