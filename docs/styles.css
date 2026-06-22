@@ -243,6 +243,10 @@ h3 {
   color: var(--text);
 }
 
+.orange {
+  background: var(--orange);
+}
+
 .section-band,
 .content-section,
 .design-section,
@@ -259,8 +263,6 @@ h3 {
   gap: 56px;
   padding-top: 60px;
   padding-bottom: 60px;
-  border-top: 2px solid var(--text);
-  border-bottom: 1px solid var(--line);
 }
 
 .content-section {
@@ -372,11 +374,48 @@ h3 {
   align-items: center;
   padding-top: 80px;
   padding-bottom: 86px;
-  border-top: 1px solid var(--line);
 }
 
 .design-section .object-scene {
   min-height: 520px;
+}
+
+.palette-codes {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.palette-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px;
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: lowercase;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.palette-code:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(39, 40, 34, 0.14);
+}
+
+.palette-code.pink {
+  color: var(--bg);
+}
+
+.palette-code.green,
+.palette-code.blue,
+.palette-code.orange {
+  color: var(--text);
 }
 
 .object-art {
@@ -447,7 +486,6 @@ h3 {
   gap: 20px;
   padding-top: 32px;
   padding-bottom: 40px;
-  border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 15px;
 }
@@ -539,6 +577,10 @@ h3 {
 
   .design-section .object-scene {
     min-height: 430px;
+  }
+
+  .palette-codes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .site-footer {
