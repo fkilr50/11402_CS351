@@ -16,11 +16,10 @@
       <nav class="nav" aria-label="Main navigation">
         <a href="#website">Website</a>
         <a href="#projects">Projects</a>
-        <a href="#design">Design</a>
       </nav>
     </header>
 
-    <main id="top">
+    <main id="top" data-art-surface>
       <section class="hero">
         <div class="hero-copy">
           <p class="kicker">CS351 Final Portfolio</p>
@@ -34,6 +33,13 @@
             <a href="https://github.com/fkilr50">GitHub</a>
           </div>
         </div>
+        <img
+          class="object-art side-object side-mug"
+          src="assets/objects/mug.png"
+          alt=""
+          aria-hidden="true"
+          data-depth="7"
+        />
       </section>
 
       <section id="website" class="intro section-band">
@@ -46,6 +52,13 @@
           background and body text stay readable, while the accent colors come
           from the Monokai editor palette.
         </p>
+        <img
+          class="object-art side-object side-pen"
+          src="assets/objects/pen.png"
+          alt=""
+          aria-hidden="true"
+          data-depth="11"
+        />
       </section>
 
       <section id="projects" class="content-section">
@@ -82,6 +95,13 @@
             </span>
           </a>
         </div>
+        <img
+          class="object-art side-object side-phone"
+          src="assets/objects/phone.png"
+          alt=""
+          aria-hidden="true"
+          data-depth="8"
+        />
       </section>
 
       <section class="content-section workflow">
@@ -107,54 +127,21 @@
             <span>README, test plan, usage guide, and course materials</span>
           </div>
         </div>
+        <img
+          class="object-art side-object side-table"
+          src="assets/objects/table.png"
+          alt=""
+          aria-hidden="true"
+          data-depth="-6"
+        />
       </section>
 
-      <section id="design" class="design-section">
-        <div>
-          <p class="kicker">Design</p>
-          <h2>Monokai objects become moving parts of the page.</h2>
-          <p>
-            The background and body text stay simple, while the Monokai palette
-            becomes an interactive desktop still life. Hover and click the objects to
-            make the composition shift.
-          </p>
-        </div>
-
-        <div class="design-visual">
-          <div class="object-scene" aria-label="Interactive Monokai desk objects" data-art-surface>
-            <img
-              class="object-art object-table"
-              src="assets/objects/table.png"
-              alt="Orange round side table"
-              data-depth="-5"
-            />
-            <img
-              class="object-art object-mug"
-              src="assets/objects/mug.png"
-              alt="Pink ceramic mug"
-              data-depth="12"
-            />
-            <img
-              class="object-art object-phone"
-              src="assets/objects/phone.png"
-              alt="Blue smartphone"
-              data-depth="8"
-            />
-            <img
-              class="object-art object-pen"
-              src="assets/objects/pen.png"
-              alt="Green pen"
-              data-depth="16"
-            />
-          </div>
-          <div class="palette-codes" aria-label="Monokai accent color codes">
-            <span class="palette-code pink">#f92672</span>
-            <span class="palette-code green">#a6e22e</span>
-            <span class="palette-code blue">#66d9ef</span>
-            <span class="palette-code orange">#fd971f</span>
-          </div>
-        </div>
-      </section>
+      <div class="palette-codes palette-strip" aria-label="Monokai accent color codes">
+        <span class="palette-code pink">#f92672</span>
+        <span class="palette-code green">#a6e22e</span>
+        <span class="palette-code blue">#66d9ef</span>
+        <span class="palette-code orange">#fd971f</span>
+      </div>
     </main>
 
     <footer class="site-footer">

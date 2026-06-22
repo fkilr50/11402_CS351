@@ -24,6 +24,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background:
     linear-gradient(90deg, rgba(24, 22, 26, 0.05) 1px, transparent 1px),
     linear-gradient(0deg, rgba(24, 22, 26, 0.04) 1px, transparent 1px),
@@ -140,7 +141,6 @@ h3 {
 
 .lead,
 .intro p,
-.design-section p,
 .project-card p {
   color: var(--muted);
   font-size: 20px;
@@ -249,7 +249,6 @@ h3 {
 
 .section-band,
 .content-section,
-.design-section,
 .site-footer {
   max-width: 1180px;
   margin: 0 auto;
@@ -258,6 +257,7 @@ h3 {
 }
 
 .section-band {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1.15fr);
   gap: 56px;
@@ -266,6 +266,7 @@ h3 {
 }
 
 .content-section {
+  position: relative;
   padding-top: 72px;
 }
 
@@ -367,24 +368,17 @@ h3 {
   color: var(--muted);
 }
 
-.design-section {
-  display: grid;
-  grid-template-columns: minmax(0, 0.82fr) minmax(360px, 1.18fr);
-  gap: 48px;
-  align-items: center;
-  padding-top: 80px;
-  padding-bottom: 86px;
-}
-
-.design-section .object-scene {
-  min-height: 520px;
-}
-
 .palette-codes {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
   margin-top: 14px;
+}
+
+.palette-strip {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 72px 48px 54px;
 }
 
 .palette-code {
@@ -444,40 +438,54 @@ h3 {
     scale(1.055);
 }
 
-.object-table {
-  z-index: 1;
-  right: 1%;
-  bottom: -3%;
-  width: 78%;
-  --object-tilt: 0deg;
-  --float-time: 9s;
+.side-object {
+  display: none;
 }
 
-.object-mug {
-  z-index: 4;
-  bottom: 37%;
-  left: 8%;
-  width: 35%;
-  --object-tilt: -3deg;
-  --float-time: 6.5s;
-}
+@media (min-width: 900px) {
+  .side-object {
+    display: block;
+    z-index: 0;
+  }
 
-.object-phone {
-  z-index: 3;
-  right: 8%;
-  bottom: 36%;
-  width: 31%;
-  --object-tilt: 8deg;
-  --float-time: 7.5s;
-}
+  .hero-copy,
+  .section-band > :not(.side-object),
+  .content-section > :not(.side-object) {
+    position: relative;
+    z-index: 2;
+  }
 
-.object-pen {
-  z-index: 5;
-  top: 1%;
-  left: 46%;
-  width: 13%;
-  --object-tilt: 18deg;
-  --float-time: 5.8s;
+  .side-mug {
+    right: -88px;
+    bottom: 16px;
+    width: 180px;
+    --object-tilt: -7deg;
+    --float-time: 6.5s;
+  }
+
+  .side-pen {
+    top: 6px;
+    left: -54px;
+    width: 62px;
+    --object-tilt: -14deg;
+    --float-time: 5.8s;
+  }
+
+  .side-phone {
+    top: 86px;
+    right: -88px;
+    width: 174px;
+    --object-tilt: 9deg;
+    --float-time: 7.5s;
+  }
+
+  .side-table {
+    bottom: -82px;
+    left: -138px;
+    width: 238px;
+    --object-tilt: 0deg;
+    --float-time: 9s;
+  }
 }
 
 .site-footer {
@@ -532,15 +540,13 @@ h3 {
   }
 
   .hero,
-  .section-band,
-  .design-section {
+  .section-band {
     grid-template-columns: 1fr;
   }
 
   .hero,
   .section-band,
   .content-section,
-  .design-section,
   .site-footer {
     padding-right: 24px;
     padding-left: 24px;
@@ -561,7 +567,6 @@ h3 {
 
   .lead,
   .intro p,
-  .design-section p,
   .project-card p {
     font-size: 19px;
   }
@@ -573,10 +578,6 @@ h3 {
 
   .project-card:nth-child(2) {
     margin-top: 0;
-  }
-
-  .design-section .object-scene {
-    min-height: 430px;
   }
 
   .palette-codes {
