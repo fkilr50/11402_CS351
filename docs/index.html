@@ -3,104 +3,91 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>1123543 | AI-Assisted Software Development</title>
+    <title>1123543 | CS351 Portfolio</title>
     <meta
       name="description"
-      content="Personal course portfolio for AI-assisted software development."
+      content="Personal portfolio for CS351 AI-assisted software development."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top">Student 1123543</a>
+      <a class="brand" href="#top">Marvel Aiken</a>
       <nav class="nav" aria-label="Main navigation">
+        <a href="#website">Website</a>
         <a href="#projects">Projects</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#reflection">Reflection</a>
+        <a href="#design">Design</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">CS351 Final Portfolio</p>
+          <p class="kicker">CS351 Final Portfolio</p>
           <h1>AI-Assisted Software Development Portfolio</h1>
-          <p class="hero-text">
-            A clean personal website for presenting my course work, project
-            repositories, and reflection from the semester.
+          <p class="lead">
+            A personal course website for presenting my GitHub workflow,
+            Project 0, Project B, and course repository evidence.
           </p>
           <div class="actions">
-            <a class="button primary" href="https://fkilr50.github.io/11402_CS351/">Website</a>
-            <a class="button primary" href="https://github.com/fkilr50">GitHub</a>
-            <a class="button secondary" href="#projects">View Work</a>
+            <a href="https://fkilr50.github.io/11402_CS351/">Website</a>
+            <a href="https://github.com/fkilr50">GitHub</a>
           </div>
         </div>
-        <figure class="palette-figure">
-          <img
-            src="assets/palette-page-181.png"
-            alt="Color palette inspired by book page 181, combination 272 from A Dictionary of Color Combinations."
-          />
-          <figcaption>Book page 181, combination 272: Salvia Blue, Turquoise Green, Orange, Pale Lemon Yellow.</figcaption>
-        </figure>
       </section>
 
-      <section class="summary section-band">
+      <section id="website" class="intro section-band">
         <div>
-          <p class="section-kicker">Website</p>
-          <h2>Simple, readable, and built around a four-color design system.</h2>
+          <p class="kicker">Website</p>
+          <h2>Simple structure, cleaner text, and Monokai accents.</h2>
         </div>
         <p>
-          This website uses HTML and CSS. The design concept comes from book
-          page 181 of A Dictionary of Color Combinations, using Salvia Blue,
-          Turquoise Green, Orange, and Pale Lemon Yellow as the main visual
-          identity.
+          This website uses HTML and CSS with a light editor-inspired base. The
+          background and body text stay readable, while the accent colors come
+          from the Monokai editor palette.
         </p>
       </section>
 
       <section id="projects" class="content-section">
         <div class="section-heading">
-          <p class="section-kicker">Course Work</p>
-          <h2>Projects</h2>
+          <p class="kicker">Projects</p>
+          <h2>Course Work</h2>
         </div>
+
         <div class="project-grid">
-          <article class="project-card">
+          <a class="project-card" href="https://github.com/fkilr50/11402_CS351_Project0">
+            <div class="card-mark pink"></div>
             <p class="project-label">Project 0</p>
             <h3>Two Sum</h3>
             <p>
-              A C++ implementation of the classic Two Sum problem using a hash
-              map to find a valid pair in linear time.
+              C++ implementation using a hash map to find two indices whose
+              values add to a target. The project includes tests, documentation,
+              and GitHub workflow evidence.
             </p>
-            <ul>
-              <li>Algorithm: complement lookup with unordered_map</li>
-              <li>Complexity: O(n) time, O(n) space</li>
-              <li>Testing: 23 cases across simple, edge, single-target, and stress tests</li>
-            </ul>
-            <a class="text-link" href="https://github.com/fkilr50/11402_CS351_Project0">
-              Project 0 Repository
-            </a>
-          </article>
+            <span class="text-link">
+              View Project 0
+            </span>
+          </a>
 
-          <article class="project-card accent">
+          <a class="project-card" href="https://github.com/fkilr50/11402_CS351_ProjectB">
+            <div class="card-mark green"></div>
             <p class="project-label">Project B</p>
             <h3>CSV Mini Database</h3>
             <p>
-              A small database-style project focused on reading, storing,
-              searching, and managing structured records with CSV files.
+              A mini database project focused on storing and managing structured
+              records with CSV files.
             </p>
-            <ul>
-              <li>Main idea: use CSV files as persistent storage</li>
-              <li>Focus: data design, commands, validation, and file operations</li>
-              <li>Demo: show record creation, query, update, and saved output</li>
-            </ul>
-            <a class="text-link" href="#">Add Project B Repository</a>
-          </article>
+            <span class="text-link">
+              View Project B
+            </span>
+          </a>
         </div>
       </section>
 
-      <section id="workflow" class="content-section workflow">
+      <section class="content-section workflow">
         <div class="section-heading">
-          <p class="section-kicker">Learning Record</p>
-          <h2>Course Progress</h2>
+          <p class="kicker">Learning Record</p>
+          <h2>GitHub Workflow</h2>
         </div>
         <div class="evidence-grid">
           <div class="evidence-item">
@@ -117,34 +104,43 @@
           </div>
           <div class="evidence-item">
             <strong>Docs</strong>
-            <span>README, architecture notes, test plan, usage guide</span>
+            <span>README, test plan, usage guide, and course materials</span>
           </div>
         </div>
       </section>
 
-      <section id="reflection" class="reflection">
-        <div class="reflection-copy">
-          <p class="section-kicker">Personal Thoughts</p>
-          <h2>This course helped me understand software work as a process.</h2>
+      <section id="design" class="design-section">
+        <div>
+          <p class="kicker">Design</p>
+          <h2>Monokai colors become moving parts of the page.</h2>
           <p>
-            Before this class, GitHub was unfamiliar to me. Through the semester,
-            I learned how commits, branches, pull requests, testing, and
-            documentation fit together. I also learned that AI can help with
-            ideas and debugging, but the result still needs to be checked by
-            reading code and running tests.
+            The background and body text stay simple, while the Monokai palette
+            becomes a set of interactive blocks. Hover and click the blocks to
+            make the composition shift.
           </p>
         </div>
-        <div class="reflection-list" aria-label="Reflection points">
-          <p><span>Technology:</span> HTML, CSS, GitHub Pages</p>
-          <p><span>Design:</span> page 181 color palette, simple layout</p>
-          <p><span>Future:</span> add clearer screenshots and Project B details</p>
+
+        <div class="color-study" aria-label="Monokai color blocks" data-art-surface>
+          <button class="color-block pink" type="button" data-depth="12">
+            <span>Pink</span>
+          </button>
+          <button class="color-block blue" type="button" data-depth="-14">
+            <span>Blue</span>
+          </button>
+          <button class="color-block green" type="button" data-depth="10">
+            <span>Green</span>
+          </button>
+          <button class="color-block yellow" type="button" data-depth="-8">
+            <span>Yellow</span>
+          </button>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Built for the CS351 AI-Assisted Software Development final presentation.</p>
-      <a href="#top">Back to top</a>
+      <span>Student ID: 1123543</span>
+      <span>AI-Assisted Software Development</span>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
