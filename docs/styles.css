@@ -456,33 +456,33 @@ h3 {
   }
 
   .side-mug {
-    right: -88px;
-    bottom: 16px;
-    width: 180px;
+    right: -118px;
+    bottom: 4px;
+    width: 260px;
     --object-tilt: -7deg;
     --float-time: 6.5s;
   }
 
   .side-pen {
-    top: 6px;
-    left: -54px;
-    width: 62px;
+    top: -18px;
+    left: -76px;
+    width: 90px;
     --object-tilt: -14deg;
     --float-time: 5.8s;
   }
 
   .side-phone {
-    top: 86px;
-    right: -88px;
-    width: 174px;
+    top: 58px;
+    right: -116px;
+    width: 244px;
     --object-tilt: 9deg;
     --float-time: 7.5s;
   }
 
   .side-table {
-    bottom: -82px;
-    left: -138px;
-    width: 238px;
+    bottom: -108px;
+    left: -188px;
+    width: 340px;
     --object-tilt: 0deg;
     --float-time: 9s;
   }
