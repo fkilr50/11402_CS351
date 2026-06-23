@@ -6,7 +6,7 @@ Hello, my name is Marvel Aiken. I am a junior IBPI student. I wish to gain a lot
 
 ## Purpose of this Repository
 
-This repository contains materials for CS351 including assignments, lab exercises, notes, and any supporting code or documents produced for the course.
+This repository contains materials for CS351 including assignments, notes, and any supporting code or documents produced for the course.
 
 ## GitHub Pages
 
