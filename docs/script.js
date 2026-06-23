@@ -28,3 +28,14 @@ for (const object of document.querySelectorAll(".color-block, .object-art")) {
     object.classList.toggle("is-active");
   });
 }
+
+for (const object of document.querySelectorAll(".object-art")) {
+  let spin = 0;
+  const turnClockwise = () => {
+    spin += 180;
+    object.style.setProperty("--object-spin", `${spin}deg`);
+  };
+
+  object.addEventListener("pointerenter", turnClockwise);
+  object.addEventListener("pointerleave", turnClockwise);
+}
